@@ -31,5 +31,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             this.label1.Text = "Ya se cambio el nombre del Label";
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
