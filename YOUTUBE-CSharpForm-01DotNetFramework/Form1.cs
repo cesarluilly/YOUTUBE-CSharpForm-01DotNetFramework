@@ -56,5 +56,29 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             label1.Text = "Se cambiara el Texto por accion de boton";
         }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (
+                checkBox1.Checked == true
+                )
+            {
+                label2.Text = "Hombre";
+            }else if(
+                checkBox2.Checked == true
+                )
+            {
+                label2.Text = "Mujer";
+            }
+            else
+            {
+                label2.Text = "No ha selecionado ninguno";
+            }
+        }
     }
 }
