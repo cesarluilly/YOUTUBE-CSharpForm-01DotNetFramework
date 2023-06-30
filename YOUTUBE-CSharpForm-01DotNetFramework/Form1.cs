@@ -46,5 +46,15 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            label1.Text = "Se cambiara el Texto por accion de boton";
+        }
     }
 }
