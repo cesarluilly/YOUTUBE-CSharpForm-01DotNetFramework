@@ -105,5 +105,15 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
                 label3.Text = "No ha selecionado ninguno radio button de H o M";
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label7.Text = comboBox1.Text;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label7.Text = comboBox1.Text;
+        }
     }
 }
