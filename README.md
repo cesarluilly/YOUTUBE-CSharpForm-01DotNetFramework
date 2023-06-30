@@ -15,6 +15,8 @@
     - Presiono Ctrl + Flechas(arriba, abajo, derecha, izquierda) : Me mueve el elemento
     - Presiono Shift + Flechas(arriba, abajo, derecha, izquierda) : Me cambia las dimensiones de alto y ancho en cantidades pequeñas
     - Presiono Ctrl + Shift + Flechas(abajo, derecha) : Me cambia las dimensiones de alto y ancho en cantidades grandes
+* Si quiero agregar varios elementos del mismo tipo, entonces seleccion el elemento y 
+    presion CTRL y empiezo uno por uno a la ves
 * Si seleccion un elemento de Toolbox, y si doy "enter" entonces automaticamente me los agrega al Form en una esquina del Form
 * Si estoy en el Toolbox y presiono la Tecla "L", hara que se valla a la palabla que empieza con la L, tal como label.
 * Mostrar las herramientas

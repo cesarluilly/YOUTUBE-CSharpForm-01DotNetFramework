@@ -80,5 +80,30 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
                 label2.Text = "No ha selecionado ninguno";
             }
         }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (
+                radioButton1.Checked == true
+                )
+            {
+                label3.Text = "Hombre";
+            }
+            else if (
+                radioButton2.Checked == true
+                )
+            {
+                label3.Text = "Mujer";
+            }
+            else
+            {
+                label3.Text = "No ha selecionado ninguno radio button de H o M";
+            }
+        }
     }
 }
