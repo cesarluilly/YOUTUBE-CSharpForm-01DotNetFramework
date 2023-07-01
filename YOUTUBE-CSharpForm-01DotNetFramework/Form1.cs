@@ -125,5 +125,12 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             listView1.Items.Add("Hola");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("Canada");
+            String strIteme = listBox1.SelectedItem?.ToString();
+            label9.Text = strIteme;
+        }
     }
 }

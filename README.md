@@ -15,6 +15,7 @@
     - Presiono Ctrl + Flechas(arriba, abajo, derecha, izquierda) : Me mueve el elemento
     - Presiono Shift + Flechas(arriba, abajo, derecha, izquierda) : Me cambia las dimensiones de alto y ancho en cantidades pequeñas
     - Presiono Ctrl + Shift + Flechas(abajo, derecha) : Me cambia las dimensiones de alto y ancho en cantidades grandes
+    - Ctrl + Click Derecho y muevo el cursor, **estare creando** un nuevo elemento del mismo tipo sin tener que ir al toolbox
 * Si quiero agregar varios elementos del mismo tipo, entonces seleccion el elemento y 
     presion CTRL y empiezo uno por uno a la ves
 * Si seleccion un elemento de Toolbox, y si doy "enter" entonces automaticamente me los agrega al Form en una esquina del Form
