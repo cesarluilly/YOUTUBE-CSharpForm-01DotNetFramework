@@ -170,7 +170,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
 
         private void button11_Click(object sender, EventArgs e)
         {
-            frmMenuStrip menu = new frmMenuStrip();
+            frmMenuStrip menu = new frmMenuStrip(null);
             menu.Show();
         }
 
@@ -207,6 +207,12 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private void button16_Click(object sender, EventArgs e)
         {
             label27.Text = trackBar1.Value.ToString();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            frmMenuStrip frmMenuStrip = new frmMenuStrip(textBox2.Text);
+            frmMenuStrip.Show();    
         }
     }
 }

@@ -12,9 +12,17 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
 {
     public partial class frmMenuStrip : Form
     {
-        public frmMenuStrip()
+        public frmMenuStrip(String strReceiveData)
         {
             InitializeComponent();
+            if (strReceiveData != null && strReceiveData.Length > 0)
+            {
+                label2.Text = strReceiveData;
+            }
+            else
+            {
+                label2.Text = "Label para recibir informacion del formulario principal";
+            }
         }
 
         private void subMenu1ToolStripMenuItem_Click(object sender, EventArgs e)
