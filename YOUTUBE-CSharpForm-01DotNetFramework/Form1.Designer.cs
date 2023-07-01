@@ -31,19 +31,19 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Tacos");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
-            treeNode25,
-            treeNode26});
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("HotDog");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Pizza");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
-            treeNode28,
-            treeNode29});
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Torre Eiffel");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
-            treeNode31});
+            System.Windows.Forms.TreeNode treeNode121 = new System.Windows.Forms.TreeNode("Tacos");
+            System.Windows.Forms.TreeNode treeNode122 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
+            System.Windows.Forms.TreeNode treeNode123 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
+            treeNode121,
+            treeNode122});
+            System.Windows.Forms.TreeNode treeNode124 = new System.Windows.Forms.TreeNode("HotDog");
+            System.Windows.Forms.TreeNode treeNode125 = new System.Windows.Forms.TreeNode("Pizza");
+            System.Windows.Forms.TreeNode treeNode126 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
+            treeNode124,
+            treeNode125});
+            System.Windows.Forms.TreeNode treeNode127 = new System.Windows.Forms.TreeNode("Torre Eiffel");
+            System.Windows.Forms.TreeNode treeNode128 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
+            treeNode127});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
@@ -107,11 +107,21 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label27 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -557,26 +567,26 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // 
             this.treeView1.Location = new System.Drawing.Point(844, 237);
             this.treeView1.Name = "treeView1";
-            treeNode25.Name = "Node3";
-            treeNode25.Text = "Tacos";
-            treeNode26.Name = "Node8";
-            treeNode26.Text = "Angel de la Independencia";
-            treeNode27.Name = "Node0";
-            treeNode27.Text = "Mexico";
-            treeNode28.Name = "Node4";
-            treeNode28.Text = "HotDog";
-            treeNode29.Name = "Node5";
-            treeNode29.Text = "Pizza";
-            treeNode30.Name = "Node1";
-            treeNode30.Text = "EUA";
-            treeNode31.Name = "Node6";
-            treeNode31.Text = "Torre Eiffel";
-            treeNode32.Name = "Node2";
-            treeNode32.Text = "Francia";
+            treeNode121.Name = "Node3";
+            treeNode121.Text = "Tacos";
+            treeNode122.Name = "Node8";
+            treeNode122.Text = "Angel de la Independencia";
+            treeNode123.Name = "Node0";
+            treeNode123.Text = "Mexico";
+            treeNode124.Name = "Node4";
+            treeNode124.Text = "HotDog";
+            treeNode125.Name = "Node5";
+            treeNode125.Text = "Pizza";
+            treeNode126.Name = "Node1";
+            treeNode126.Text = "EUA";
+            treeNode127.Name = "Node6";
+            treeNode127.Text = "Torre Eiffel";
+            treeNode128.Name = "Node2";
+            treeNode128.Text = "Francia";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode27,
-            treeNode30,
-            treeNode32});
+            treeNode123,
+            treeNode126,
+            treeNode128});
             this.treeView1.Size = new System.Drawing.Size(121, 97);
             this.treeView1.TabIndex = 32;
             // 
@@ -723,11 +733,107 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(677, 441);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(118, 13);
+            this.label25.TabIndex = 22;
+            this.label25.Text = "Clase 32 - MessageBox";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(680, 472);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(130, 23);
+            this.button12.TabIndex = 40;
+            this.button12.Text = "MessageBox";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(680, 501);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(130, 25);
+            this.button13.TabIndex = 41;
+            this.button13.Text = "Otro tipo de message";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(680, 532);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(130, 37);
+            this.button14.TabIndex = 42;
+            this.button14.Text = "Otro tipo de message\r\n\"Yes or not cancel\"";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(680, 571);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(130, 23);
+            this.button15.TabIndex = 43;
+            this.button15.Text = "Otro tipo de message\r\n\"AbortRetryNotCancel\"\r\n";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(847, 441);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(104, 13);
+            this.label26.TabIndex = 22;
+            this.label26.Text = "Clase 33 - Track Bar";
+            this.label26.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(847, 472);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Minimum = 50;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 44;
+            this.trackBar1.Value = 50;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(881, 519);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(31, 13);
+            this.label27.TabIndex = 22;
+            this.label27.Text = "Valor";
+            this.label27.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(861, 555);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 45;
+            this.button16.Text = "button16";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1302, 849);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
@@ -754,6 +860,9 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -794,6 +903,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -862,6 +972,15 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label27;
     }
 }
 

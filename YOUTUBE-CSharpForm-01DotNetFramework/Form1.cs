@@ -173,5 +173,40 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             frmMenuStrip menu = new frmMenuStrip();
             menu.Show();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola, Soy un cuadro de mensaje");
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola", "Mensage importante");
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola", "Titulo", MessageBoxButtons.YesNoCancel);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola", "Titulo", MessageBoxButtons.AbortRetryIgnore);
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            label27.Text = trackBar1.Value.ToString();
+        }
     }
 }
