@@ -138,5 +138,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             if (progressBar1.Value < 100)
                 progressBar1.Value = progressBar1.Value + 10;
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            label13.Text = dateTimePicker1.Text;
+            label14.Text = dateTimePicker1.Value.ToString();
+        }
     }
 }
