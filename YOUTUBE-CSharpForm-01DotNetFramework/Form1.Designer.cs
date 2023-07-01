@@ -31,19 +31,19 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Tacos");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
-            treeNode33,
-            treeNode34});
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("HotDog");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Pizza");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
-            treeNode36,
-            treeNode37});
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Torre Eiffel");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
-            treeNode39});
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("Tacos");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
+            treeNode57,
+            treeNode58});
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("HotDog");
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("Pizza");
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
+            treeNode60,
+            treeNode61});
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("Torre Eiffel");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
+            treeNode63});
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
@@ -95,6 +95,9 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.label17 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -545,26 +548,26 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // 
             this.treeView1.Location = new System.Drawing.Point(844, 237);
             this.treeView1.Name = "treeView1";
-            treeNode33.Name = "Node3";
-            treeNode33.Text = "Tacos";
-            treeNode34.Name = "Node8";
-            treeNode34.Text = "Angel de la Independencia";
-            treeNode35.Name = "Node0";
-            treeNode35.Text = "Mexico";
-            treeNode36.Name = "Node4";
-            treeNode36.Text = "HotDog";
-            treeNode37.Name = "Node5";
-            treeNode37.Text = "Pizza";
-            treeNode38.Name = "Node1";
-            treeNode38.Text = "EUA";
-            treeNode39.Name = "Node6";
-            treeNode39.Text = "Torre Eiffel";
-            treeNode40.Name = "Node2";
-            treeNode40.Text = "Francia";
+            treeNode57.Name = "Node3";
+            treeNode57.Text = "Tacos";
+            treeNode58.Name = "Node8";
+            treeNode58.Text = "Angel de la Independencia";
+            treeNode59.Name = "Node0";
+            treeNode59.Text = "Mexico";
+            treeNode60.Name = "Node4";
+            treeNode60.Text = "HotDog";
+            treeNode61.Name = "Node5";
+            treeNode61.Text = "Pizza";
+            treeNode62.Name = "Node1";
+            treeNode62.Text = "EUA";
+            treeNode63.Name = "Node6";
+            treeNode63.Text = "Torre Eiffel";
+            treeNode64.Name = "Node2";
+            treeNode64.Text = "Francia";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode35,
-            treeNode38,
-            treeNode40});
+            treeNode59,
+            treeNode62,
+            treeNode64});
             this.treeView1.Size = new System.Drawing.Size(121, 97);
             this.treeView1.TabIndex = 32;
             // 
@@ -613,11 +616,38 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.label18.TabIndex = 22;
             this.label18.Text = "Clase 25 - NumericUpDown";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(23, 403);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(112, 13);
+            this.label19.TabIndex = 22;
+            this.label19.Text = "Clase 26 RichTextBox";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(26, 434);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(146, 20);
+            this.textBox1.TabIndex = 35;
+            this.textBox1.Text = "textBox";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(26, 460);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(146, 96);
+            this.richTextBox1.TabIndex = 36;
+            this.richTextBox1.Text = "richTextBox";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1251, 461);
+            this.ClientSize = new System.Drawing.Size(1302, 783);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.treeView1);
@@ -638,6 +668,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label9);
@@ -730,6 +761,9 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label19;
     }
 }
 
