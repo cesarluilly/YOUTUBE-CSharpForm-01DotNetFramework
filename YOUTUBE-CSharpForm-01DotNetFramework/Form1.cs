@@ -167,5 +167,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
 
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            frmMenuStrip menu = new frmMenuStrip();
+            menu.Show();
+        }
     }
 }
