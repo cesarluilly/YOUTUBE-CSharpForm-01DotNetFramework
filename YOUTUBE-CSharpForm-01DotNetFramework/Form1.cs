@@ -155,5 +155,12 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             label17.Text = numericUpDown1.Value.ToString();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            webBrowser miFormaWeb = new webBrowser();
+            miFormaWeb.Show();
+            //miFormaWeb.ShowDialog();
+        }
     }
 }
