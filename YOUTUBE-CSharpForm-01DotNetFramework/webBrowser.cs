@@ -22,9 +22,29 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.Close();   
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonIr_Click(object sender, EventArgs e)
         {
+            webBrowser1.Navigate(txtUrl.Text);
+        }
 
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
+        }
+
+        private void btnAdelante_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoForward();
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Stop();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoHome();   
         }
     }
 }

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnAdelante = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.txtUrl = new System.Windows.Forms.TextBox();
+            this.btnIr = new System.Windows.Forms.Button();
+            this.btnStop = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
@@ -49,67 +49,71 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // button1
+            // btnAtras
             // 
-            this.button1.Location = new System.Drawing.Point(1, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "<";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAtras.Location = new System.Drawing.Point(1, 12);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(50, 23);
+            this.btnAtras.TabIndex = 1;
+            this.btnAtras.Text = "<";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
-            // button2
+            // btnAdelante
             // 
-            this.button2.Location = new System.Drawing.Point(57, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdelante.Location = new System.Drawing.Point(57, 12);
+            this.btnAdelante.Name = "btnAdelante";
+            this.btnAdelante.Size = new System.Drawing.Size(50, 23);
+            this.btnAdelante.TabIndex = 2;
+            this.btnAdelante.Text = ">";
+            this.btnAdelante.UseVisualStyleBackColor = true;
+            this.btnAdelante.Click += new System.EventHandler(this.btnAdelante_Click);
             // 
-            // button3
+            // btnUpdate
             // 
-            this.button3.Location = new System.Drawing.Point(113, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(54, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(113, 12);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(54, 23);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnHome
             // 
-            this.button4.Location = new System.Drawing.Point(173, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(54, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Home";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHome.Location = new System.Drawing.Point(173, 12);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(54, 23);
+            this.btnHome.TabIndex = 4;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // textBox1
+            // txtUrl
             // 
-            this.textBox1.Location = new System.Drawing.Point(314, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(372, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtUrl.Location = new System.Drawing.Point(314, 12);
+            this.txtUrl.Name = "txtUrl";
+            this.txtUrl.Size = new System.Drawing.Size(372, 20);
+            this.txtUrl.TabIndex = 5;
             // 
-            // button5
+            // btnIr
             // 
-            this.button5.Location = new System.Drawing.Point(692, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Ir";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnIr.Location = new System.Drawing.Point(692, 12);
+            this.btnIr.Name = "btnIr";
+            this.btnIr.Size = new System.Drawing.Size(75, 23);
+            this.btnIr.TabIndex = 6;
+            this.btnIr.Text = "Ir";
+            this.btnIr.UseVisualStyleBackColor = true;
+            this.btnIr.Click += new System.EventHandler(this.buttonIr_Click);
             // 
-            // button6
+            // btnStop
             // 
-            this.button6.Location = new System.Drawing.Point(233, 13);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Stop";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnStop.Location = new System.Drawing.Point(233, 13);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 23);
+            this.btnStop.TabIndex = 7;
+            this.btnStop.Text = "Stop";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // webBrowser1
             // 
@@ -125,13 +129,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 450);
             this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.btnIr);
+            this.Controls.Add(this.txtUrl);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAdelante);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnCerrar);
             this.Name = "webBrowser";
             this.Text = "webBrowser";
@@ -143,13 +147,13 @@
         #endregion
 
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Button btnAdelante;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.TextBox txtUrl;
+        private System.Windows.Forms.Button btnIr;
+        private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
