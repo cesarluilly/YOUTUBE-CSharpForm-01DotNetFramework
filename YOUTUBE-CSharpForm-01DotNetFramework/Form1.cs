@@ -144,5 +144,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             label13.Text = dateTimePicker1.Text;
             label14.Text = dateTimePicker1.Value.ToString();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel1.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://www.unicoos.com/blog/la-constante-de-kaprekar/");
+        }
     }
 }
