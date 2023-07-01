@@ -32,6 +32,7 @@
 * Ctrl + T: Buscar tipos, métodos y símbolos en el proyecto.
 * Ctrl + M, Ctrl + M: Plegar o desplegar el bloque de código actual.
 * En el diseñador **Ctrl + Shift + F10**: Abrir el menú contextual del control seleccionado para acceder a sus propiedades.
+* Por default el label se agrega con una propiedad autosize en true, y es por eso que el label no tiene los puntos para pode hacerlo mas grande o mas pequeño, si quisieramos hacerlo mas grande o pequeño tendriamos que ponerle en autosize en false
 
 # Cursos 
 * https://www.youtube.com/playlist?list=PLAzlSdU-KYwVRRO6P9fn1LcoXSITIIev0

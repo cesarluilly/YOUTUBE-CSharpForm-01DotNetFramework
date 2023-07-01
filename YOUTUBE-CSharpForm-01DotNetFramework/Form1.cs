@@ -162,5 +162,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             miFormaWeb.Show();
             //miFormaWeb.ShowDialog();
         }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
