@@ -150,5 +150,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             linkLabel1.LinkVisited = true;
             System.Diagnostics.Process.Start("https://www.unicoos.com/blog/la-constante-de-kaprekar/");
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            label17.Text = numericUpDown1.Value.ToString();
+        }
     }
 }
