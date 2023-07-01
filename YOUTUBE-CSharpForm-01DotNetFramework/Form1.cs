@@ -115,5 +115,15 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             label7.Text = comboBox1.Text;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Add("Hola");
+        }
     }
 }
