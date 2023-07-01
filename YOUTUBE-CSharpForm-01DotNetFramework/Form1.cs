@@ -132,5 +132,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             String strIteme = listBox1.SelectedItem?.ToString();
             label9.Text = strIteme;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (progressBar1.Value < 100)
+                progressBar1.Value = progressBar1.Value + 10;
+        }
     }
 }
