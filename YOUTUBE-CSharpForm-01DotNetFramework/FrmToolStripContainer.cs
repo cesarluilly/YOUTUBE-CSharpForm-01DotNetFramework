@@ -16,5 +16,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             InitializeComponent();
         }
+
+        private void toolStrip3_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

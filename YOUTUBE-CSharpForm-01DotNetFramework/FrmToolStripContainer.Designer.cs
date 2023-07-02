@@ -46,7 +46,7 @@
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripContainer1.ContentPanel.SuspendLayout();
+            this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -57,13 +57,16 @@
             // toolStripContainer1
             // 
             // 
+            // toolStripContainer1.BottomToolStripPanel
+            // 
+            this.toolStripContainer1.BottomToolStripPanel.Controls.Add(this.toolStrip3);
+            // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.toolStrip3);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(588, 268);
-            this.toolStripContainer1.Location = new System.Drawing.Point(107, 57);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(484, 213);
+            this.toolStripContainer1.Location = new System.Drawing.Point(162, 62);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(588, 318);
+            this.toolStripContainer1.Size = new System.Drawing.Size(484, 288);
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -172,11 +175,12 @@
             this.toolStripLabel4,
             this.toolStripSeparator5,
             this.toolStripLabel5});
-            this.toolStrip3.Location = new System.Drawing.Point(150, 140);
+            this.toolStrip3.Location = new System.Drawing.Point(150, 0);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.Size = new System.Drawing.Size(190, 25);
             this.toolStrip3.TabIndex = 0;
             this.toolStrip3.Text = "toolStrip3";
+            this.toolStrip3.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip3_ItemClicked);
             // 
             // toolStripLabel4
             // 
@@ -203,8 +207,8 @@
             this.Controls.Add(this.toolStripContainer1);
             this.Name = "FrmToolStripContainer";
             this.Text = "FrmToolStripContainer";
-            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-            this.toolStripContainer1.ContentPanel.PerformLayout();
+            this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
+            this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);

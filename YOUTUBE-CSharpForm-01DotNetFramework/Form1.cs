@@ -36,6 +36,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
 
             // Registra el evento MouseWheel para desplazarme a los laterales con Shift + Rueda Mouse.
             this.MouseWheel += new MouseEventHandler(Form1_MouseWheel);
+
+            domainUpDown1.Items.Add("Mexico");
+            domainUpDown1.Items.Add("Eua");
+            domainUpDown1.Items.Add("Francia");
         }
 
         //--------------------------------------------------------------------------------------------------------------
@@ -396,6 +400,22 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             FrmToolStripContainer frmToolStripContainer = new FrmToolStripContainer();  
             frmToolStripContainer.Show();   
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            domainUpDown1.Items.Add(textBox6.Text);
+        }
+
+        private void domainUpDown1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+            String pais = (String)domainUpDown1.SelectedItem;
+            label39.Text = String.Format("El mejor pais del mundo es {0}", pais);
         }
     }
 }
