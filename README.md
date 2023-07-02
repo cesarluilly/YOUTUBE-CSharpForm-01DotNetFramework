@@ -33,6 +33,7 @@
 * Ctrl + M, Ctrl + M: Plegar o desplegar el bloque de código actual.
 * En el diseñador **Ctrl + Shift + F10**: Abrir el menú contextual del control seleccionado para acceder a sus propiedades.
 * Por default el label se agrega con una propiedad autosize en true, y es por eso que el label no tiene los puntos para pode hacerlo mas grande o mas pequeño, si quisieramos hacerlo mas grande o pequeño tendriamos que ponerle en autosize en false
+* Form.AutoScroll Property (System.Windows.Forms) es para ponerle un scroll automatico a mi form y se puedan visualizar todos mis componentes
 
 # Cursos 
 * https://www.youtube.com/playlist?list=PLAzlSdU-KYwVRRO6P9fn1LcoXSITIIev0
@@ -52,6 +53,25 @@
     - .Enabled = true;
 * Hacer **visible** o no el elemento
     - .Visible = true;
+* Si nuestros elementos ocupan mas espacio hacia abajo o a los laterales, entonces podemos emplear la forma de trabajo de que estando en el proyecto, nosotros vamos a agrandar el form cubriendo todos los elementos y poder desplazarnos rapido y codificar. Estaremos agregando el siguiente codigo para que en tiempo de ejecucion se acomode al tamaño de la pantalla y aparescan los scroll automaticamente
+    - ```c#
+        public Form1()
+        {
+            InitializeComponent();
+            //  //Center the form
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            //  //Form will take size of the screen.
+            //  //If the form in the project the size property is very big, 
+            //  //  there for with the next code we could do appear the
+            //  //  scroll automatically if the property autoscroll is
+            //  //  true.
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+
+            //                                              //Form will be maximized
+            this.WindowState = FormWindowState.Maximized;
+        }
+    ```
 * Ponerle fuente a un elemento
     ```C#
     new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));

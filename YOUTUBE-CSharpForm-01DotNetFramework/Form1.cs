@@ -2,19 +2,92 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace YOUTUBE_CSharpForm_01DotNetFramework
 {
     public partial class Form1 : Form
     {
+        //-------------------------------------------------------------------------------------------------------------
+        //                                                  //INSTANCE VARIABLES.
+        private int intCount_Z;
+
         public Form1()
         {
             InitializeComponent();
+            //                                              //Center the form
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            //                                              //Form will take size of the screen.
+            //                                              //If the form in the project the size property is very big, 
+            //                                              //  there for with the next code we could do appear the
+            //                                              //  scroll automatically if the property autoscroll is
+            //                                              //  true.
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+
+            //                                              //Form will be maximized
+            this.WindowState = FormWindowState.Maximized;
+
+            // Registra el evento MouseWheel para desplazarme a los laterales con Shift + Rueda Mouse.
+            this.MouseWheel += new MouseEventHandler(Form1_MouseWheel);
+        }
+
+        //--------------------------------------------------------------------------------------------------------------
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            const int scrollAmount = 50;  // Aumenta este valor para un desplazamiento más largo.
+
+            // Chequea si la tecla Control está siendo presionada.
+            if ((keyData & Keys.Control) == Keys.Control)
+            {
+                switch (keyData)
+                {
+                    case Keys.Control | Keys.Up:
+                        // Desplazamiento hacia arriba.
+                        this.VerticalScroll.Value = Math.Max(0, this.VerticalScroll.Value - scrollAmount);
+                        return true;
+
+                    case Keys.Control | Keys.Down:
+                        // Desplazamiento hacia abajo.
+                        this.VerticalScroll.Value = Math.Min(this.VerticalScroll.Maximum - this.VerticalScroll.LargeChange + 1, this.VerticalScroll.Value + scrollAmount);
+                        return true;
+
+                    case Keys.Control | Keys.Left:
+                        // Desplazamiento hacia la izquierda.
+                        this.HorizontalScroll.Value = Math.Max(0, this.HorizontalScroll.Value - scrollAmount);
+                        return true;
+
+                    case Keys.Control | Keys.Right:
+                        // Desplazamiento hacia la derecha.
+                        this.HorizontalScroll.Value = Math.Min(this.HorizontalScroll.Maximum - this.HorizontalScroll.LargeChange + 1, this.HorizontalScroll.Value + scrollAmount);
+                        return true;
+                }
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        //--------------------------------------------------------------------------------------------------------------
+        private void Form1_MouseWheel(object sender, MouseEventArgs e)
+        {
+            // Verifica si la tecla Shift está presionada
+            if (Control.ModifierKeys == Keys.Shift)
+            {
+                // Desplaza el panel horizontalmente en base a la dirección de la rueda del ratón
+                int newValue = this.HorizontalScroll.Value - e.Delta;
+                newValue = Math.Max(0, newValue);  // Asegura que el valor no sea negativo
+                newValue = Math.Min(this.HorizontalScroll.Maximum - this.HorizontalScroll.LargeChange + 1, newValue);  // Asegura que el valor no exceda el máximo
+                this.HorizontalScroll.Value = newValue;
+
+                // Indica que el evento fue manejado
+                ((HandledMouseEventArgs)e).Handled = true;
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -213,6 +286,116 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
             frmMenuStrip frmMenuStrip = new frmMenuStrip(textBox2.Text);
             frmMenuStrip.Show();    
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            intCount_Z++;
+            label30.Text = intCount_Z.ToString();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void label31_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            frmTestStatusStrip frmStatusStrip = new frmTestStatusStrip();
+            frmStatusStrip.Show();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            int intNum = dataGridView1.Rows.Add();
+            dataGridView1.Rows[intNum].Cells[0].Value = textBox3.Text ?? "";
+            dataGridView1.Rows[intNum].Cells[1].Value = textBox4.Text ?? "";
+            dataGridView1.Rows[intNum].Cells[2].Value = textBox5.Text ?? "";
+
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            FrmToolStripContainer frmToolStripContainer = new FrmToolStripContainer();  
+            frmToolStripContainer.Show();   
         }
     }
 }

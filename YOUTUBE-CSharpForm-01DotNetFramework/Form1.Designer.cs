@@ -31,19 +31,19 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode153 = new System.Windows.Forms.TreeNode("Tacos");
-            System.Windows.Forms.TreeNode treeNode154 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
-            System.Windows.Forms.TreeNode treeNode155 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
-            treeNode153,
-            treeNode154});
-            System.Windows.Forms.TreeNode treeNode156 = new System.Windows.Forms.TreeNode("HotDog");
-            System.Windows.Forms.TreeNode treeNode157 = new System.Windows.Forms.TreeNode("Pizza");
-            System.Windows.Forms.TreeNode treeNode158 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
-            treeNode156,
-            treeNode157});
-            System.Windows.Forms.TreeNode treeNode159 = new System.Windows.Forms.TreeNode("Torre Eiffel");
-            System.Windows.Forms.TreeNode treeNode160 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
-            treeNode159});
+            System.Windows.Forms.TreeNode treeNode225 = new System.Windows.Forms.TreeNode("Tacos");
+            System.Windows.Forms.TreeNode treeNode226 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
+            System.Windows.Forms.TreeNode treeNode227 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
+            treeNode225,
+            treeNode226});
+            System.Windows.Forms.TreeNode treeNode228 = new System.Windows.Forms.TreeNode("HotDog");
+            System.Windows.Forms.TreeNode treeNode229 = new System.Windows.Forms.TreeNode("Pizza");
+            System.Windows.Forms.TreeNode treeNode230 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
+            treeNode228,
+            treeNode229});
+            System.Windows.Forms.TreeNode treeNode231 = new System.Windows.Forms.TreeNode("Torre Eiffel");
+            System.Windows.Forms.TreeNode treeNode232 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
+            treeNode231});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
@@ -119,12 +119,36 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.label28 = new System.Windows.Forms.Label();
             this.button17 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.button18 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button19 = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Calficacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button22 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.button23 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -137,7 +161,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(26, 43);
+            this.button1.Location = new System.Drawing.Point(26, 133);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 55);
             this.button1.TabIndex = 0;
@@ -149,7 +173,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 27);
+            this.label1.Location = new System.Drawing.Point(23, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 1;
@@ -159,25 +183,27 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(246, 26);
+            this.checkBox1.Location = new System.Drawing.Point(312, 19);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(63, 17);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Hombre";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(243, 85);
+            this.label2.Location = new System.Drawing.Point(310, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(246, 114);
+            this.button2.Location = new System.Drawing.Point(313, 107);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -193,16 +219,17 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(246, 49);
+            this.checkBox2.Location = new System.Drawing.Point(313, 43);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(52, 17);
             this.checkBox2.TabIndex = 5;
             this.checkBox2.Text = "Mujer";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(347, 159);
+            this.button3.Location = new System.Drawing.Point(414, 152);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(149, 36);
             this.button3.TabIndex = 6;
@@ -213,55 +240,60 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(347, 26);
+            this.radioButton1.Location = new System.Drawing.Point(414, 19);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(62, 17);
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Hombre";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(347, 49);
+            this.radioButton2.Location = new System.Drawing.Point(414, 42);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(51, 17);
             this.radioButton2.TabIndex = 8;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Mujer";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(347, 130);
+            this.label3.Location = new System.Drawing.Point(414, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(347, 72);
+            this.radioButton3.Location = new System.Drawing.Point(414, 65);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(85, 17);
             this.radioButton3.TabIndex = 10;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "radioButton3";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(347, 95);
+            this.radioButton4.Location = new System.Drawing.Point(414, 88);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(85, 17);
             this.radioButton4.TabIndex = 11;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "radioButton4";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -570,26 +602,26 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // 
             this.treeView1.Location = new System.Drawing.Point(844, 237);
             this.treeView1.Name = "treeView1";
-            treeNode153.Name = "Node3";
-            treeNode153.Text = "Tacos";
-            treeNode154.Name = "Node8";
-            treeNode154.Text = "Angel de la Independencia";
-            treeNode155.Name = "Node0";
-            treeNode155.Text = "Mexico";
-            treeNode156.Name = "Node4";
-            treeNode156.Text = "HotDog";
-            treeNode157.Name = "Node5";
-            treeNode157.Text = "Pizza";
-            treeNode158.Name = "Node1";
-            treeNode158.Text = "EUA";
-            treeNode159.Name = "Node6";
-            treeNode159.Text = "Torre Eiffel";
-            treeNode160.Name = "Node2";
-            treeNode160.Text = "Francia";
+            treeNode225.Name = "Node3";
+            treeNode225.Text = "Tacos";
+            treeNode226.Name = "Node8";
+            treeNode226.Text = "Angel de la Independencia";
+            treeNode227.Name = "Node0";
+            treeNode227.Text = "Mexico";
+            treeNode228.Name = "Node4";
+            treeNode228.Text = "HotDog";
+            treeNode229.Name = "Node5";
+            treeNode229.Text = "Pizza";
+            treeNode230.Name = "Node1";
+            treeNode230.Text = "EUA";
+            treeNode231.Name = "Node6";
+            treeNode231.Text = "Torre Eiffel";
+            treeNode232.Name = "Node2";
+            treeNode232.Text = "Francia";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode155,
-            treeNode158,
-            treeNode160});
+            treeNode227,
+            treeNode230,
+            treeNode232});
             this.treeView1.Size = new System.Drawing.Size(121, 97);
             this.treeView1.TabIndex = 32;
             // 
@@ -671,6 +703,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.label20.Size = new System.Drawing.Size(115, 13);
             this.label20.TabIndex = 22;
             this.label20.Text = "Clase 27 Web Browser";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // button10
             // 
@@ -853,11 +886,240 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 47;
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(23, 692);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(209, 39);
+            this.label29.TabIndex = 22;
+            this.label29.Text = "Clase 40 - Timer\r\nNos va a ayudar a ejecutar una accion en \r\ncierto tiempo determ" +
+    "inado";
+            this.label29.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(26, 772);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 48;
+            this.button18.Text = "Iniciar";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(119, 772);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(75, 23);
+            this.button19.TabIndex = 49;
+            this.button19.Text = "Detener";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(57, 742);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(60, 13);
+            this.label30.TabIndex = 22;
+            this.label30.Text = "Valor Timer";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(9, 11);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(297, 75);
+            this.label31.TabIndex = 50;
+            this.label31.Text = "Ctrl + → o Ctrl + ←  : Desplazamiento Lateral\r\nShift + ScrollMouse : Desplazamien" +
+    "to Lateral\r\n\r\nCtrl + ↓ o Ctrl + ↑ : Desplazamiento Vertical\r\nScrollMouse : Despl" +
+    "azamiento Vertical\r\n";
+            this.label31.Click += new System.EventHandler(this.label31_Click_1);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(1488, 39);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(195, 39);
+            this.label32.TabIndex = 51;
+            this.label32.Text = "Label puesto a proposito para \r\ntestear el desplazamiento horizontal con\r\nCtrl + " +
+    "← y Ctrl + →";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(1358, 616);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(195, 39);
+            this.label33.TabIndex = 51;
+            this.label33.Text = "Label puesto a proposito para \r\ntestear el desplazamiento horizontal con\r\nCtrl + " +
+    "← y Ctrl + →";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(267, 692);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(229, 39);
+            this.label34.TabIndex = 22;
+            this.label34.Text = "Del video 41 hasta el 46 trata de reproduccion \r\nde videos y sonidos por lo cual " +
+    "ahorita no es \r\nrelevante";
+            this.label34.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(518, 692);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(105, 13);
+            this.label35.TabIndex = 22;
+            this.label35.Text = "Clase 47 Status Strip";
+            this.label35.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(0, 0);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 23);
+            this.button20.TabIndex = 52;
+            this.button20.Text = "button20";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(521, 732);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.TabIndex = 53;
+            this.button21.Text = "Ir a Ver Status Strip";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(659, 692);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(70, 13);
+            this.label36.TabIndex = 22;
+            this.label36.Text = "Clase 48 Grid";
+            this.label36.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nombre,
+            this.Apellido,
+            this.Calficacion});
+            this.dataGridView1.Location = new System.Drawing.Point(662, 772);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(345, 150);
+            this.dataGridView1.TabIndex = 54;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            // 
+            // Calficacion
+            // 
+            this.Calficacion.HeaderText = "Calficacion";
+            this.Calficacion.Name = "Calficacion";
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(902, 740);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.TabIndex = 55;
+            this.button22.Text = "Agregar";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(789, 690);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 56;
+            this.textBox3.Text = "Nombre";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(789, 716);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 57;
+            this.textBox4.Text = "Apellido";
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(789, 742);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 58;
+            this.textBox5.Text = "Calficacion";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(14, 829);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(138, 13);
+            this.label37.TabIndex = 22;
+            this.label37.Text = "Clase 49 ToolStripContainer";
+            this.label37.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(26, 868);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(121, 54);
+            this.button23.TabIndex = 59;
+            this.button23.Text = "Ir a ToolStrip Container";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 849);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1561, 1061);
+            this.Controls.Add(this.button23);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button22);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button20);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button19);
+            this.Controls.Add(this.button18);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
@@ -893,11 +1155,17 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label27);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label21);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.label35);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label11);
@@ -918,14 +1186,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Agregamos el item ImageList\r\n* Dentro agregamos las imagenes\r\n* Agregamos un labe" +
     "l y modificamos la \r\n           propiedad autosiza a false\r\n* En la propiedad ";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -937,6 +1202,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1017,6 +1283,29 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Calficacion;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Button button23;
     }
 }
 
