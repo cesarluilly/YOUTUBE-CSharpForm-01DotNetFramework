@@ -31,19 +31,19 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode545 = new System.Windows.Forms.TreeNode("Tacos");
-            System.Windows.Forms.TreeNode treeNode546 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
-            System.Windows.Forms.TreeNode treeNode547 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
-            treeNode545,
-            treeNode546});
-            System.Windows.Forms.TreeNode treeNode548 = new System.Windows.Forms.TreeNode("HotDog");
-            System.Windows.Forms.TreeNode treeNode549 = new System.Windows.Forms.TreeNode("Pizza");
-            System.Windows.Forms.TreeNode treeNode550 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
-            treeNode548,
-            treeNode549});
-            System.Windows.Forms.TreeNode treeNode551 = new System.Windows.Forms.TreeNode("Torre Eiffel");
-            System.Windows.Forms.TreeNode treeNode552 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
-            treeNode551});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Tacos");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("HotDog");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Pizza");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Torre Eiffel");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
+            treeNode7});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
@@ -129,7 +129,6 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -156,10 +155,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.label42 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
             this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
             this.label44 = new System.Windows.Forms.Label();
             this.button30 = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
@@ -391,6 +390,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Aquamarine;
             this.label4.Location = new System.Drawing.Point(636, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 13);
@@ -400,6 +400,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Aquamarine;
             this.label6.Location = new System.Drawing.Point(853, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 13);
@@ -452,6 +453,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Aquamarine;
             this.label8.Location = new System.Drawing.Point(1018, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 13);
@@ -499,6 +501,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Aquamarine;
             this.label5.Location = new System.Drawing.Point(179, 191);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 13);
@@ -519,6 +522,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Aquamarine;
             this.label10.Location = new System.Drawing.Point(347, 216);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 13);
@@ -528,6 +532,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Aquamarine;
             this.label11.Location = new System.Drawing.Point(23, 191);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(96, 13);
@@ -562,6 +567,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Aquamarine;
             this.label12.Location = new System.Drawing.Point(512, 216);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(129, 13);
@@ -599,6 +605,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Aquamarine;
             this.label15.Location = new System.Drawing.Point(723, 216);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(99, 13);
@@ -619,6 +626,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Aquamarine;
             this.label16.Location = new System.Drawing.Point(844, 216);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(102, 13);
@@ -629,26 +637,26 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // 
             this.treeView1.Location = new System.Drawing.Point(844, 237);
             this.treeView1.Name = "treeView1";
-            treeNode545.Name = "Node3";
-            treeNode545.Text = "Tacos";
-            treeNode546.Name = "Node8";
-            treeNode546.Text = "Angel de la Independencia";
-            treeNode547.Name = "Node0";
-            treeNode547.Text = "Mexico";
-            treeNode548.Name = "Node4";
-            treeNode548.Text = "HotDog";
-            treeNode549.Name = "Node5";
-            treeNode549.Text = "Pizza";
-            treeNode550.Name = "Node1";
-            treeNode550.Text = "EUA";
-            treeNode551.Name = "Node6";
-            treeNode551.Text = "Torre Eiffel";
-            treeNode552.Name = "Node2";
-            treeNode552.Text = "Francia";
+            treeNode1.Name = "Node3";
+            treeNode1.Text = "Tacos";
+            treeNode2.Name = "Node8";
+            treeNode2.Text = "Angel de la Independencia";
+            treeNode3.Name = "Node0";
+            treeNode3.Text = "Mexico";
+            treeNode4.Name = "Node4";
+            treeNode4.Text = "HotDog";
+            treeNode5.Name = "Node5";
+            treeNode5.Text = "Pizza";
+            treeNode6.Name = "Node1";
+            treeNode6.Text = "EUA";
+            treeNode7.Name = "Node6";
+            treeNode7.Text = "Torre Eiffel";
+            treeNode8.Name = "Node2";
+            treeNode8.Text = "Francia";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode547,
-            treeNode550,
-            treeNode552});
+            treeNode3,
+            treeNode6,
+            treeNode8});
             this.treeView1.Size = new System.Drawing.Size(121, 97);
             this.treeView1.TabIndex = 32;
             // 
@@ -691,6 +699,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Aquamarine;
             this.label18.Location = new System.Drawing.Point(1005, 216);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(138, 13);
@@ -700,6 +709,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Aquamarine;
             this.label19.Location = new System.Drawing.Point(23, 441);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(112, 13);
@@ -725,6 +735,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Aquamarine;
             this.label20.Location = new System.Drawing.Point(209, 441);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(115, 13);
@@ -752,6 +763,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Aquamarine;
             this.label21.Location = new System.Drawing.Point(354, 441);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(96, 13);
@@ -780,6 +792,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Aquamarine;
             this.label24.Location = new System.Drawing.Point(545, 441);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(99, 13);
@@ -799,6 +812,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Aquamarine;
             this.label25.Location = new System.Drawing.Point(677, 441);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(118, 13);
@@ -848,6 +862,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Aquamarine;
             this.label26.Location = new System.Drawing.Point(847, 441);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(104, 13);
@@ -889,6 +904,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Aquamarine;
             this.label28.Location = new System.Drawing.Point(995, 441);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(171, 13);
@@ -916,6 +932,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Aquamarine;
             this.label29.Location = new System.Drawing.Point(23, 692);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(209, 39);
@@ -995,6 +1012,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Aquamarine;
             this.label34.Location = new System.Drawing.Point(267, 692);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(229, 39);
@@ -1006,21 +1024,13 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label35
             // 
             this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Aquamarine;
             this.label35.Location = new System.Drawing.Point(518, 692);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(105, 13);
             this.label35.TabIndex = 22;
             this.label35.Text = "Clase 47 Status Strip";
             this.label35.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(0, 0);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 23);
-            this.button20.TabIndex = 52;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
             // 
             // button21
             // 
@@ -1035,6 +1045,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label36
             // 
             this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Aquamarine;
             this.label36.Location = new System.Drawing.Point(659, 606);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(70, 13);
@@ -1107,6 +1118,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label37
             // 
             this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Aquamarine;
             this.label37.Location = new System.Drawing.Point(14, 829);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(138, 13);
@@ -1127,6 +1139,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label38
             // 
             this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Aquamarine;
             this.label38.Location = new System.Drawing.Point(175, 829);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(129, 13);
@@ -1173,6 +1186,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label40
             // 
             this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Aquamarine;
             this.label40.Location = new System.Drawing.Point(377, 829);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(83, 13);
@@ -1206,6 +1220,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label41
             // 
             this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Aquamarine;
             this.label41.Location = new System.Drawing.Point(489, 829);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(112, 13);
@@ -1228,6 +1243,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label42
             // 
             this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.Aquamarine;
             this.label42.Location = new System.Drawing.Point(664, 854);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(78, 13);
@@ -1244,6 +1260,24 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 67;
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(105, 60);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(75, 23);
+            this.button29.TabIndex = 2;
+            this.button29.Text = "button29";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(24, 60);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(75, 23);
+            this.button28.TabIndex = 1;
+            this.button28.Text = "button28";
+            this.button28.UseVisualStyleBackColor = true;
             // 
             // label43
             // 
@@ -1264,27 +1298,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(24, 60);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 23);
-            this.button28.TabIndex = 1;
-            this.button28.Text = "button28";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            this.button29.Location = new System.Drawing.Point(105, 60);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 23);
-            this.button29.TabIndex = 2;
-            this.button29.Text = "button29";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
             // label44
             // 
             this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Aquamarine;
             this.label44.Location = new System.Drawing.Point(970, 849);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(138, 13);
@@ -1305,6 +1322,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label45
             // 
             this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Aquamarine;
             this.label45.Location = new System.Drawing.Point(971, 909);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(137, 13);
@@ -1325,6 +1343,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label46
             // 
             this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.Aquamarine;
             this.label46.Location = new System.Drawing.Point(1129, 849);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(116, 13);
@@ -1345,6 +1364,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // label47
             // 
             this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Aquamarine;
             this.label47.Location = new System.Drawing.Point(1129, 910);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(103, 13);
@@ -1388,7 +1408,6 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.Controls.Add(this.button22);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button21);
-            this.Controls.Add(this.button20);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
@@ -1585,7 +1604,6 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
