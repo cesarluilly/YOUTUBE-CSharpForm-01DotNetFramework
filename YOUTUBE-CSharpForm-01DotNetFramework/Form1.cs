@@ -438,5 +438,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
                 button27.Text = "Ocultar panel";
             }
         }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            FrmFlowLayoutPanel flowLayoutPanel1 = new FrmFlowLayoutPanel();
+            flowLayoutPanel1.Show();
+        }
     }
 }

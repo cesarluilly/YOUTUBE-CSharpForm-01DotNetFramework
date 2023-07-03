@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFlowLayoutPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlowLayoutPanel.Designer.cs">
+      <DependentUpon>FrmFlowLayoutPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuStrip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFlowLayoutPanel.resx">
+      <DependentUpon>FrmFlowLayoutPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuStrip.resx">
       <DependentUpon>frmMenuStrip.cs</DependentUpon>
