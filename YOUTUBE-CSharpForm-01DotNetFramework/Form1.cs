@@ -417,5 +417,10 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             String pais = (String)domainUpDown1.SelectedItem;
             label39.Text = String.Format("El mejor pais del mundo es {0}", pais);
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
