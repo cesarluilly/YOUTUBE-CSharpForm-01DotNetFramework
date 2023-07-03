@@ -31,19 +31,19 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode481 = new System.Windows.Forms.TreeNode("Tacos");
-            System.Windows.Forms.TreeNode treeNode482 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
-            System.Windows.Forms.TreeNode treeNode483 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
-            treeNode481,
-            treeNode482});
-            System.Windows.Forms.TreeNode treeNode484 = new System.Windows.Forms.TreeNode("HotDog");
-            System.Windows.Forms.TreeNode treeNode485 = new System.Windows.Forms.TreeNode("Pizza");
-            System.Windows.Forms.TreeNode treeNode486 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
-            treeNode484,
-            treeNode485});
-            System.Windows.Forms.TreeNode treeNode487 = new System.Windows.Forms.TreeNode("Torre Eiffel");
-            System.Windows.Forms.TreeNode treeNode488 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
-            treeNode487});
+            System.Windows.Forms.TreeNode treeNode513 = new System.Windows.Forms.TreeNode("Tacos");
+            System.Windows.Forms.TreeNode treeNode514 = new System.Windows.Forms.TreeNode("Angel de la Independencia");
+            System.Windows.Forms.TreeNode treeNode515 = new System.Windows.Forms.TreeNode("Mexico", new System.Windows.Forms.TreeNode[] {
+            treeNode513,
+            treeNode514});
+            System.Windows.Forms.TreeNode treeNode516 = new System.Windows.Forms.TreeNode("HotDog");
+            System.Windows.Forms.TreeNode treeNode517 = new System.Windows.Forms.TreeNode("Pizza");
+            System.Windows.Forms.TreeNode treeNode518 = new System.Windows.Forms.TreeNode("EUA", new System.Windows.Forms.TreeNode[] {
+            treeNode516,
+            treeNode517});
+            System.Windows.Forms.TreeNode treeNode519 = new System.Windows.Forms.TreeNode("Torre Eiffel");
+            System.Windows.Forms.TreeNode treeNode520 = new System.Windows.Forms.TreeNode("Francia", new System.Windows.Forms.TreeNode[] {
+            treeNode519});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
@@ -164,6 +164,8 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.button30 = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.button31 = new System.Windows.Forms.Button();
+            this.label46 = new System.Windows.Forms.Label();
+            this.button32 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -625,26 +627,26 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             // 
             this.treeView1.Location = new System.Drawing.Point(844, 237);
             this.treeView1.Name = "treeView1";
-            treeNode481.Name = "Node3";
-            treeNode481.Text = "Tacos";
-            treeNode482.Name = "Node8";
-            treeNode482.Text = "Angel de la Independencia";
-            treeNode483.Name = "Node0";
-            treeNode483.Text = "Mexico";
-            treeNode484.Name = "Node4";
-            treeNode484.Text = "HotDog";
-            treeNode485.Name = "Node5";
-            treeNode485.Text = "Pizza";
-            treeNode486.Name = "Node1";
-            treeNode486.Text = "EUA";
-            treeNode487.Name = "Node6";
-            treeNode487.Text = "Torre Eiffel";
-            treeNode488.Name = "Node2";
-            treeNode488.Text = "Francia";
+            treeNode513.Name = "Node3";
+            treeNode513.Text = "Tacos";
+            treeNode514.Name = "Node8";
+            treeNode514.Text = "Angel de la Independencia";
+            treeNode515.Name = "Node0";
+            treeNode515.Text = "Mexico";
+            treeNode516.Name = "Node4";
+            treeNode516.Text = "HotDog";
+            treeNode517.Name = "Node5";
+            treeNode517.Text = "Pizza";
+            treeNode518.Name = "Node1";
+            treeNode518.Text = "EUA";
+            treeNode519.Name = "Node6";
+            treeNode519.Text = "Torre Eiffel";
+            treeNode520.Name = "Node2";
+            treeNode520.Text = "Francia";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode483,
-            treeNode486,
-            treeNode488});
+            treeNode515,
+            treeNode518,
+            treeNode520});
             this.treeView1.Size = new System.Drawing.Size(121, 97);
             this.treeView1.TabIndex = 32;
             // 
@@ -1318,12 +1320,33 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(1129, 854);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(116, 13);
+            this.label46.TabIndex = 22;
+            this.label46.Text = "Clase 58 SplitContainer";
+            this.label46.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(1132, 884);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(115, 23);
+            this.button32.TabIndex = 71;
+            this.button32.Text = "Ir a SplitContainer";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1561, 1061);
+            this.Controls.Add(this.button32);
             this.Controls.Add(this.button31);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button27);
@@ -1396,6 +1419,7 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label36);
+            this.Controls.Add(this.label46);
             this.Controls.Add(this.label45);
             this.Controls.Add(this.label44);
             this.Controls.Add(this.label42);
@@ -1571,6 +1595,8 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Button button32;
     }
 }
 

@@ -450,5 +450,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             FrmTableLayoutPanel frmTableLayoutPanel = new FrmTableLayoutPanel();
             frmTableLayoutPanel.Show();
         }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            FrmSplitContainer frmSplitContainer = new FrmSplitContainer();
+            frmSplitContainer.Show();
+        }
     }
 }
