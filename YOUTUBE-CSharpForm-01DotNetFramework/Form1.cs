@@ -422,5 +422,21 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
         {
 
         }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if (
+                panel1.Visible == true
+                )
+            {
+                panel1.Visible = false;
+                button27.Text = "Mostrar panel";
+            }
+            else
+            {
+                panel1.Visible = true;
+                button27.Text = "Ocultar panel";
+            }
+        }
     }
 }
