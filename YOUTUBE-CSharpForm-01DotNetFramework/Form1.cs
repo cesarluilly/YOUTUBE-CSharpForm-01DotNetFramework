@@ -456,5 +456,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             FrmSplitContainer frmSplitContainer = new FrmSplitContainer();
             frmSplitContainer.Show();
         }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            FrmTabControl frmTabControl1 = new FrmTabControl();
+            frmTabControl1.Show();
+        }
     }
 }
