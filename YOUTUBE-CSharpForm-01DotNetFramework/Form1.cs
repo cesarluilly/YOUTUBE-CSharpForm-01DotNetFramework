@@ -444,5 +444,11 @@ namespace YOUTUBE_CSharpForm_01DotNetFramework
             FrmFlowLayoutPanel flowLayoutPanel1 = new FrmFlowLayoutPanel();
             flowLayoutPanel1.Show();
         }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            FrmTableLayoutPanel frmTableLayoutPanel = new FrmTableLayoutPanel();
+            frmTableLayoutPanel.Show();
+        }
     }
 }
